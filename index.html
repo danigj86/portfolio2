@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Portfolio 2</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!--header empieza-->
     <header>
@@ -14,7 +16,7 @@
         <div class="toggle"></div>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Work</a></li>
             <li><a href="#">Testimonial</a></li>
@@ -34,6 +36,46 @@
     <!--banner acaba-->
 
     <!--about empieza-->
+    <section class="about v100">
+        <div class="heading">
+            <h2 id="about">About me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>Im a front Developoer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cupiditate vitae exercitationem
+                    deserunt aperiam eius aliquid nostrum neque laudantium officiis non laboriosam, alias, qui, amet
+                    ut libero et excepturi. Rem! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Reprehenderit dignissimos ipsam quia debitis excepturi obcaecati qui fuga voluptatem quas.
+                    Delectus vitae saepe, sunt temporibus eaque et officiis aspernatur nulla dolorum? <br><br>Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati nam voluptatibus, inventore rem voluptates, suscipit, dicta adipisci necessitatibus
+                    non itaque quas expedita eos minus id quis. Iste nam eum expedita. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Hic vitae culpa voluptates rerum dolore molestias, nisi sit sed
+                    pariatur adipisci eveniet illum, nihil laboriosam assumenda, tempore earum nostrum totam
+                    expedita! <br><br>
+                    Delectus vitae saepe, sunt temporibus eaque et officiis aspernatur nulla dolorum? <br><br>Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati nam voluptatibus, inventore rem voluptates, suscipit, dicta adipisci necessitatibus
+                    non itaque quas expedita eos minus id quis. Iste nam eum expedita. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Hic vitae culpa voluptates rerum dolore molestias, nisi sit sed
+                    pariatur adipisci eveniet illum, nihil laboriosam assumenda, tempore earum nostrum totam
+                    expedita!</p>
+            </div>
+            <div class="w50">
+                <img src="img/img1.jpg" class="img" alt="">
+            </div>
+        </div>
+
+    </section>
     <!--about acaba-->
+
+    <script>    
+    window.addEventListener('scroll', function(){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+    });
+    </script>
 </body>
+
 </html>
