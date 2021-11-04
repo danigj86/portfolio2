@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    padding: 100px;
+}
+
+/* BANNER */
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: url("../img/banner.jpg");
+    background-size: cover;
+    display: flex;
+    background-position: right;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+}
+.banner h2 span{
+    font-size: 2em;
+    font-weight: 700;
+}
+.banner h3{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+}
+.banner span{
+
+}
+.btn{
+    position: relative;
+    background-color: cornflowerblue;
+    padding: 10px 30px;
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    
+}
+.btn:hover{
+    background-color: transparent;
+    border-color:  cornflowerblue;
+    cursor: pointer;
+    color: cornflowerblue;
+}
+
+/* HEADER - NAVBAR*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+header .logo{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 30px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    font-size: 24px;
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none; 
+    color: white;
+}
