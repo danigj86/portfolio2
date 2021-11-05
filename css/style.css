@@ -23,6 +23,7 @@ header.sticky{
     background-color: white;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) ;
     color: black;
+    height: 50px;
 }
 header.sticky .logo{
     color: black;
@@ -72,6 +73,7 @@ header.sticky ul li a{
     border: 1px solid transparent;
     border-radius: 4px;
     transition: all 0.5s ease;
+    display: inline-block;
     
 }
 .btn:hover{
@@ -142,7 +144,7 @@ header ul li a:hover{
 .content{
     margin-top: 70px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .contentBx h3{
     font-size: 24px;
@@ -189,4 +191,19 @@ header ul li a:hover{
 .services .content .servicesBx:hover img{
     max-width: 80px;
     filter: invert(0);
+}
+
+/* WORK */
+.work .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.work .content .workBx {
+    width: 300px;
+    margin: 10px;
+}
+.workBx img{
+    max-width: 100%;
+    
 }
