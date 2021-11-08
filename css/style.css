@@ -457,7 +457,6 @@ header ul li a:hover{
         padding: 40px 20px;
         margin: 10px;
     }
-  
 }
 @media (max-width: 460px){
     header .logo{
@@ -465,6 +464,9 @@ header ul li a:hover{
     }
     .banner .textBx{
         font-size: 10px;
+    }
+    .about .content .contentImg img{
+        display: none;
     }
    
 }
