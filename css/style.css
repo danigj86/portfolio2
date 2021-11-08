@@ -441,6 +441,9 @@ header ul li a:hover{
         flex-direction: column;
         width: 80%;
     }
+    .about .content .contentImg img{
+        width: 100%;
+    }
     .services .content .servicesBx{
         width: 100%;
         max-width: 100%;
