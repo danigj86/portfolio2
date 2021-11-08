@@ -27,7 +27,7 @@ header.sticky{
 }
 header.sticky .logo{
     color: black;
-    font-weight: 700;
+    font-weight: 650;
 }
 header.sticky ul li a{
     color: black;
@@ -44,7 +44,7 @@ header.sticky ul li a{
     align-items: center;
 }
 .banner h2{
-    font-size: 3em;
+    font-size: 50px;
     color: #fff;
     font-weight: 500;
 }
@@ -63,7 +63,7 @@ header.sticky ul li a{
 }
 .btn{
     position: relative;
-    background-color: var(--main-color);
+    background-color: var(--color-1);
     padding: 10px 30px;
     margin-top: 30px;
     display: inline-block;
@@ -80,7 +80,7 @@ header.sticky ul li a{
     background-color: transparent;
     border-color:  var(--main-color);
     cursor: pointer;
-    color: var(--main-color);
+    color: var(--color-1);
 }
 
 /* HEADER - NAVBAR*/
@@ -88,9 +88,10 @@ header{
     position: fixed;
     background-color: transparent;
     top: 0;
+    height: 50px;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
+    padding: 30px 100px;
     z-index: 1;
     display: flex;
     justify-content: space-around;
@@ -99,7 +100,7 @@ header{
 }
 header .logo{
     text-decoration: none;
-    color: var(--main-color);
+    color: var(--white-900);
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 700;
@@ -136,23 +137,35 @@ header ul li a:hover{
     text-align: center;
     color: #111;
 }
-.heading h2{
+.about .heading h2{
     font-weight: 600;
-    font-size: 30px;
+    font-size: 44px;
     padding-top: 50px;
+    color: var(--color-1);
 }
-.content{
+ .content{
     margin-top: 70px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.contentBx h3{
+.about .contentBox h3{
     font-size: 24px;
     margin-bottom: 10px;
 }
-.w50{
-    width: 50%;
+.about .contentBox{
+    width: 500px;
+    margin: 10px;
+    text-align: justify;
+    padding: 25px;
+    
 }
+.contentImg img{
+    max-width: 700px;
+}
+
 
 /* SERVICES */
 
@@ -160,7 +173,12 @@ header ul li a:hover{
     background-color: var(--dark-800);
     color: var(--white-900);
 }
-.services .heading{
+.services .heading h2{
+    color: var(--color-1);
+    padding-top: 50px;
+    font-size: 44px;
+}
+.services .heading p{
     color: var(--white-900);
 }
 .services .content{
@@ -171,7 +189,7 @@ header ul li a:hover{
 }
 .services .content .servicesBx{
     border: 1px solid var(--main-color);
-    width: calc(30% - 30px);
+    /* width: calc(30% - 30px); */
     padding: 40px 20px;
     max-width: 340px;
     text-align: center;
@@ -192,6 +210,9 @@ header ul li a:hover{
     max-width: 80px;
     filter: invert(0);
 }
+.services .content .servicesBx:hover p{
+  color: var(--dark-800);
+}
 
 /* WORK */
 .work .content{
@@ -199,11 +220,248 @@ header ul li a:hover{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.work .heading h2{
+    padding-top: 50px;
+    color: var(--color-1);
+    font-size: 44px;
+}
 .work .content .workBx {
-    width: 300px;
+    width: 250px;
     margin: 10px;
 }
 .workBx img{
     max-width: 100%;
     
+}
+/* TESTIMONIOS */
+.testimonios{
+    background-color: var(--dark-800);
+}
+.testimonios .heading h2 {
+    padding-top: 50px;
+    color: var(--color-1);
+    font-size: 44px;
+}
+.testimonios .heading p{
+    color: var(--white-900);
+}
+.testimonios .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.testimonioBox{
+    max-width: calc(25% - 10px);
+    /* background-color: red; */
+    margin: 5px;
+    border: 1px solid var(--main-color);
+    padding: 40px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: var(--dark-700);
+}
+.testimonios .testimonioBox p{
+    font-size: 20px;
+    text-align: justify;
+    color: var(--white-900);
+}
+.testimonioBox h3{
+    margin-top: 30px;
+    text-align: end;
+    color: var(--white-900);
+}
+.testimonioBox:hover{
+    background-color: var(--main-color);
+}
+.testimonios .content .testimonioBox:hover p{
+    color: var(--dark-800);
+  }
+.testimonios .content .testimonioBox:hover h3{
+    color: var(--dark-800);
+  }
+
+  /* CONTACTO */
+.contacto{
+      background-color: var(--dark-700);
+  }
+.contacto .heading h2{
+    padding-top: 50px;
+      color: var(--color-1);
+      font-size: 44px;
+  }
+.contacto .heading p{
+      color: var(--white-900);
+  }
+.infoContacto{
+      display: flex;
+      justify-content:space-around;
+      width: 100%;
+      flex-wrap: wrap;
+  }
+.infoBox{
+      min-width:50%;
+      /* background-color: red; */
+  }
+.infoBox h3{
+      color: var(--color-1);
+  }
+.infoBox .box{
+     /*  background-color: turquoise; */
+      margin: 5px;
+      padding: 20px;
+      display: flex;
+  }
+.infoBox .box .icon{
+      min-width: 40px;
+      padding-bottom: 10px;
+      color: var(--white-900);
+      display: flex;
+      font-size: 24px;
+      align-items: center;
+  }
+.infoBox .box .text{
+    min-width: 40px;
+    padding-bottom: 10px;
+    color: var(--white-900);
+    font-size: 18px;
+    
+}
+.formuBox{
+    justify-content: space-evenly;
+    min-width: 50%;
+   /*  background-color: blue; */
+}
+.formuBox form{
+    display: flex;
+    flex-direction: column;
+}
+.formuBox form h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: var(--color-1);
+}
+.formuBox form input, .formuBox  textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--white-900);
+    background-color: var(--dark-800);
+    resize: none;
+}
+.formuBox  textarea{
+    min-height: 150px;
+}
+.formuBox form input[type="submit"]{
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    letter-spacing: 3px;
+    transition: all 0.3s ease;
+}
+.formuBox form:hover input[type="submit"]{
+    color:var(--main-color);
+    font-weight: 600;
+    background-color: transparent;
+    border-color: var(--main-color);
+}
+
+.copy{
+    text-align: center;
+    background-color: black;
+    color: var(--white-900);
+    padding: 30px;
+}
+
+/*----------- RESPONSIVE DESIGN --------------*/
+@media (max-width: 991px){
+    header, header.sticky {
+        padding-bottom: 100px;
+        z-index: 1000;
+        color: black;
+    }
+    .menu{
+        position: fixed;
+        top: 75px;
+        left: -100%; /* PRIMER PASO. PRIMERO PONER EN 0, HASTA header.sticky .toggle{
+            filter: invert(1);
+        }  */
+        display: block;
+        text-align: center;
+        padding: 90px 60px;
+        width: 100%;
+        height: 100vh;
+        transition: 0.3s;
+        color: black;
+        background-color: white;
+        border-top: 1px solid rgba(0,0,0,0.2);
+        z-index: 999;
+    }
+    /* TERCER PASO:*/
+    .menu.activate{
+        left: 0;
+    }
+    header ul li a{
+       color: black;
+       padding: 20px;
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url("../img/menu.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+        
+    }
+    .toggle.activate{
+        width: 40px;
+        height: 40px;
+        background: url("../img/close.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    header.sticky .toggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 100px 50px
+    }
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .services .content{
+        flex-direction: column;
+        width: 80%;
+    }
+    .services .content .servicesBx{
+        width: 100%;
+        max-width: 100%;
+        margin: 5px;
+    }
+    .testimonios .content{
+        flex-direction: column;
+    }
+    .testimonios .content .testimonioBox{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 10px;
+    }
+  
+}
+@media (max-width: 460px){
+    header .logo{
+        display: none;
+    }
+    .banner .textBx{
+        font-size: 10px;
+    }
+   
 }
