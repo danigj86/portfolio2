@@ -5,13 +5,14 @@
     scroll-behavior: smooth;
 }
 :root{
+
+    /* variables */
     --main-color: #facc00;
     --color-1:#eaa023;
     --color-2:#b49d38;
     --dark-800: #24292d;
     --dark-700: #2f363e;
     --white-900: #ffffff;
-    --white-800: rgb(255,25520,0.8);
     scroll-behavior: smooth;
 
 }
@@ -20,7 +21,7 @@ section{
 }
 /* STICKY */
 header.sticky{
-    background-color: white;
+    background-color: var(--white-900);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) ;
     color: black;
     height: 50px;
@@ -36,10 +37,8 @@ header.sticky ul li a{
 .banner{
     position: relative;
     min-height: 100vh;
-    background: url("../img/p1.jpg");
-    background-size: cover;
+    background: url("../img/p1.jpg") no-repeat center center/cover;
     display: flex;
-    background-position: left;
     justify-content: space-between;
     align-items: center;
 }
@@ -57,9 +56,6 @@ header.sticky ul li a{
     font-size: 3em;
     color: #fff;
     font-weight: 500;
-}
-.banner .textBx{
-
 }
 .btn{
     position: relative;
